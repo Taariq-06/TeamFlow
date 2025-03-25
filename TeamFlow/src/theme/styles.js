@@ -1,3 +1,5 @@
+import { GiApc } from "react-icons/gi";
+
 // styles.js
 const styles = {
   "html, body": {
@@ -5,30 +7,31 @@ const styles = {
     color: "whiteAlpha.800",
     boxSizing: "border-box",
   },
-  ".table-wrapper": {
-    display: "flex",
-    justifyContent: "center",
-    paddingInline: "1rem",
-    paddingBlock: "1rem",
-    overflowX: "scroll",
-    md: {
-      paddingBlock: "2rem",
-      paddingInline: "2rem",
-    } 
-  },
   ".table": {
-    border: "1px solid #424242",
-    minWidth: "20rem",
+    width: "fit-content", 
+    minWidth: "300px",
+    display: "block",
+    whiteSpace: "nowrap",
   },
   ".tr": {
-    display: "flex",
+      display: "flex",
+      alignItems: "center",
+      justifyContent: "center",
+      textAlign: "center",
+      width: "fit-content",
+      borderBottom: "1px solid #424242",
+      paddingBlock: "1.5rem",
+    md: {
+      minWidth: "600px",
+
+    }
+
   },
   ".th": {
     position: "relative",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
-    boxShadow: "inset 0 0 0 1px #424242",
     textAlign: "center",
     padding: "0.25rem 0.13rem",
     fontSize: "8px",
@@ -68,7 +71,6 @@ const styles = {
   },
   },
   ".checkBox": {
-    boxShadow: "inset 0 0 0 1px #424242",
     display: "flex",
     justifyContent: "center",
     alignItems: "center",
@@ -76,9 +78,11 @@ const styles = {
     minWidth: "15px",
   },
   ".td": {
-    boxShadow: "inset 0 0 0 1px #424242",
     padding: "0.2rem 0.3rem",
-    fontSize: "8px",
+    fontSize: "10px",
+    sm: {
+      fontSize: "14px"
+    },
     md: {
       padding: "0.3rem 0.5rem",
       fontSize: "1rem"
